@@ -21,13 +21,13 @@ function createTable(){
       {
         cnt++;
        var y=  x.insertCell(c);
-       y.innerHTML=cnt;
-       if(num%2!=0 && cnt%2!=0){
-        y.innerHTML='*';
-       }
-       if(num%2==0 && cnt%2==0){
-        y.innerHTML='*';
-       }
+
+       if((r+c)%2!==1){
+        y.innerText = '*';
+    }
+        if((r+c)%2!==0){
+        y.innerText = cnt;
+    }
        
       }
      }
