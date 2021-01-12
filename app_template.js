@@ -1,6 +1,8 @@
 //your code here!
+let myStu = 620610776;
 function calculate(){
-    var num = document.getElementById("button-compute").value;
+    var num = document.getElementById('input-number').value;
     var para = document.createAttribute('div');
-    para.appendChild(num);
+    let re = myStu+num;
+    document.getElementById('show').innerText = re;
 }
